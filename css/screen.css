@@ -36,7 +36,6 @@ body{
     padding: 28px;
     margin: 0 28px;
     border-radius: 10px;
-    box-shadow: inset -2px 2px 2px white;
 }
 
 .form-title{
@@ -45,7 +44,6 @@ body{
     text-align: center;
     padding-bottom: 6px;
     color: white;
-    text-shadow: 2px 2px 2px black;
     border-bottom: solid 1px white;
 }
 
