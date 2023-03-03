@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url("../images/bgmobile.jpg");
+    background-image: url("../images/bgdesktop.jpg");
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
 	display: flex;
@@ -17,7 +17,7 @@ body{
 }
 @media screen and (min-width: 800px) {
     body{
-        background-image: url("../images/bgdesktop.jpg");
+        background-image: url("../images/bgmobile.jpg");
     }
 }
 
