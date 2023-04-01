@@ -55,29 +55,31 @@
       }
       
       .user-input-box {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        margin-bottom: 15px;
-      }
-      
-      .user-input-box label {
-        width: 100%;
-        color: white;
-        font-size: 20px;
-        font-weight: 400;
-        margin-bottom: 5px;
-      }
-      
-      .user-input-box input {
-        height: 40px;
-        width: 90%;
-        max-width: 100%;
-        border-radius: 7px;
-        outline: none;
-        border: 1px solid grey;
-        padding: 0 10px;
-      }
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px; /* set a fixed width */
+  margin-bottom: 15px;
+}
+
+.user-input-box label {
+  flex: 1;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.user-input-box input {
+  flex: 2;
+  height: 40px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid grey;
+  padding: 0 10px;
+  max-width: 100%; /* set a maximum width */
+}
+
       
       .gender-title {
         font-size: 24px;
