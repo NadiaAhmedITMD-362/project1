@@ -48,13 +48,11 @@
       }
       
       .main-user-info {
-        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-bottom: 20px;
       }
       
-      .user-input-box {
+.user-input-box {
   display: flex;
   align-items: center;
   width: 100%;
@@ -67,11 +65,10 @@
   color: white;
   font-size: 20px;
   font-weight: 400;
-  margin-bottom: 5px;
 }
 
 .user-input-box input {
-  flex: 2;
+  flex: 3;
   height: 40px;
   border-radius: 7px;
   outline: none;
@@ -111,6 +108,7 @@
         text-align: center;
         display: flex;
         justify-content: center;
+}
       
       .form-submit-btn input {
         display: inline-block;
@@ -121,3 +119,4 @@
         border-radius: 3px;
         color: rgb(209, 209, 209);
         background: rgba(63, 114, 76,1);
+}
