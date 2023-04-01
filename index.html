@@ -1,77 +1,51 @@
 <!DOCTYPE html>
 <html lang="en" class="nojs">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SignUp</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" media="screen" href="css/reset.css">
-    <link rel="stylesheet" media="screen" href="css/screen.css">
-    <script src="js/site.js" async></script>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="form-title">Signup</h1>
-      <form action="#null" id="signup-form" autocomplete="on">
-        <div class="main-user-info">
-          <div class="user-input-box">
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" name="fullName" placeholder="Enter Full Name">
-          </div>
-          <div class="user-input-box">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Enter Username">
-          </div>
-          <div class="user-input-box">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter Email">
-            <span class="error" id="email-error"></span>
-          </div>
-          <div class="user-input-box">
-            <label for="phoneNumber">Phone Number</label>
-            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number">
-          </div>
-          <div class="user-input-box">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter Password">
-          </div>
-          <div class="user-input-box">
-            <label for="confirmPassword">Confirm Password</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
-          </div>
-        </div>
-        <div class="gender-details-box">
-          <span class="gender-title">Gender</span>
-          <div class="gender-category">
-            <input type="radio" name="gender" id="male">
-            <label for="male">Male</label>
-            <input type="radio" name="gender" id="female">
-            <label for="female">Female</label>
-            <input type="radio" name="gender" id="other">
-            <label for="other">Other</label>
-          </div>
-        </div>
-        <div class="form-submit-btn">
-          <input type="submit" value="Become a member">
-        </div>
-      </form>
-    </div>
-    <script>
-      const form = document.getElementById('signup-form');
-      const emailInput = document.getElementById('email');
-      const emailError = document.getElementById('email-error');
 
-      form.addEventListener('submit', function(event) {
-        // Prevent the form from submitting
-        event.preventDefault();
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SignUp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="css/reset.css">
+  <link rel="stylesheet" media="screen" href="css/screen.css">
+  <script src="js/site.js" async></script>
+</head>
 
-        // Email validation
-        if (!emailInput.checkValidity()) {
-          emailError.textContent = 'Please enter a valid email address.';
-          emailError.style.display = 'block';
-        } else {
-          emailError.style.display = 'none';
-	</script>
+<body>
+  <div class="container">
+    <h1 class="form-title">Signup</h1>
+    <form action="#null" id="signup-form" autocomplete="on">
+      <div class="main-user-info">
+        <div class="user-input-box"> <label for="fullName">Full Name</label> <input type="text" id="fullName" name="fullName" placeholder="Enter Full Name"> </div>
+        <div class="user-input-box"> <label for="username">Username</label> <input type="text" id="username" name="username" placeholder="Enter Username"> </div>
+        <div class="user-input-box"> <label for="email">Email</label> <input type="email" id="email" name="email" placeholder="Enter Email"> <span class="error" id="email-error"></span> </div>
+        <div class="user-input-box"> <label for="phoneNumber">Phone Number</label> <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number"> </div>
+        <div class="user-input-box"> <label for="password">Password</label> <input type="password" id="password" name="password" placeholder="Enter Password"> </div>
+        <div class="user-input-box"> <label for="confirmPassword">Confirm Password</label> <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password"> </div>
+      </div>
+      <div class="gender-details-box"> <span class="gender-title">Gender</span>
+        <div class="gender-category"> <input type="radio" name="gender" id="male"> <label for="male">Male</label> <input type="radio" name="gender" id="female"> <label for="female">Female</label> <input type="radio" name="gender" id="other"> <label for="other">Other</label> </div>
+      </div>
+      <div class="form-submit-btn"> <input type="submit" value="Become a member"> </div>
+    </form>
+  </div>
+  <script>
+    const form = document.getElementById('signup-form');
+    const emailInput = document.getElementById('email');
+    const emailError = document.getElementById('email-error');
+    
+    form.addEventListener('submit', function(event) {
+      // Prevent the form from submitting
+      event.preventDefault();
+    
+      // Email validation
+      if (!emailInput.checkValidity()) {
+        emailError.textContent = 'Please enter a valid email address.';
+        emailError.style.display = 'block';
+      } else {
+        emailError.style.display = 'none';
+  </script>
+
 </html>
