@@ -1,129 +1,120 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-}
-
-body {
-  font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  background-image: url("../images/bgdesktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media screen and (min-width: 800px) {
-  body {
-    background-image: url("../images/bgmobile.jpg");
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  body {
-    background-image: url("../images/bgdesktop.jpg");
-  }
-}
-
-.container {
-  max-width: 650px;
-  margin: 0 auto;
-  padding: 28px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.form-title {
-  font-size: 26px;
-  font-weight: 600;
-  text-align: center;
-  color: white;
-  border-bottom: 1px solid white;
-  padding-bottom: 6px;
-  margin-bottom: 20px;
-}
-
-.main-user-info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.user-input-box {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.user-input-box:nth-child(even) {
-  justify-content: flex-end;
-}
-
-.user-input-box label {
-  width: 100%;
-  color: white;
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.user-input-box input {
-  height: 40px;
-  width: 90%;
-  border-radius: 7px;
-  outline: none;
-  border: 1px solid grey;
-  padding: 0 10px;
-}
-
-.gender-title {
-  font-size: 24px;
-  font-weight: 600;
-  color: white;
-  border-bottom: 1px solid white;
-  margin-bottom: 15px;
-}
-
-.gender-category {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-  color: white;
-}
-
-.gender-category label {
-  padding-right: 20px;
-}
-
-.gender-category label,
-.gender-category input,
-.form-submit-btn input {
-  cursor: pointer;
-}
-
-.form-submit-btn {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.form-submit-btn input {
-  display: inline-block;
-  width: auto;
-  font-size: 20px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 3px;
-  color: rgb(209, 209, 209);
-  background: rgba(63, 114, 76, 0.7);
-}
-
-.form-submit-btn input:hover {
-  background: rgba(56, 204, 93, 0.7);
-  color: rgb(255, 255, 255);
-}
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      html {
+        font-size: 16px;
+      }
+      
+      body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        line-height: 1.5;
+        background-image: url("../images/bgdesktop.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+      @media screen and (min-width: 800px) {
+        body {
+          background-image: url("../images/bgmobile.jpg");
+        }
+      }
+      
+      @media screen and (min-width: 1200px) {
+        body {
+          background-image: url("../images/bgdesktop.jpg");
+        }
+      }
+      
+      .container {
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 28px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      
+      .form-title {
+        font-size: 26px;
+        font-weight: 600;
+        text-align: center;
+        color: white;
+        border-bottom: 1px solid white;
+        padding-bottom: 6px;
+        margin-bottom: 20px;
+      }
+      
+      .main-user-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      
+      .user-input-box {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      
+      .user-input-box label {
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 5px;
+      }
+      
+      .user-input-box input {
+        height: 40px;
+        width: 90%;
+        max-width: 100%;
+        border-radius: 7px;
+        outline: none;
+        border: 1px solid grey;
+        padding: 0 10px;
+      }
+      
+      .gender-title {
+        font-size: 24px;
+        font-weight: 600;
+        color: white;
+        border-bottom: 1px solid white;
+        margin-bottom: 15px;
+      }
+      
+      .gender-category {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        color: white;
+      }
+      
+      .gender-category label {
+        padding-right: 20px;
+      }
+      
+      .gender-category label,
+      .gender-category input,
+      .form-submit-btn input {
+        cursor: pointer;
+      }
+      
+      .form-submit-btn {
+        margin-top: 40px;
+        text-align: center;
+      }
+      
+      .form-submit-btn input {
+        display: inline-block;
+        width: auto;
+        font-size: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        color: rgb(209, 209, 209);
+        background: rgba(63, 114, 76,
