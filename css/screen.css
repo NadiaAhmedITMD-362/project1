@@ -73,9 +73,9 @@ body {
     margin-bottom: 5px;
 }
 
-.user-input-box input {
+.user-input-box input{
     height: 40px;
-    width: 100%;
+    width: 90%;
     border-radius: 7px;
     outline: none;
     border: 1px solid grey;
