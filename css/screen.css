@@ -57,6 +57,7 @@ body {
 
 .user-input-box input {
   flex: 3;
+  flex-grow: 1;
   height: 40px;
   border-radius: 7px;
   outline: none;
